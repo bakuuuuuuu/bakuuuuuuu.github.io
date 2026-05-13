@@ -638,6 +638,38 @@
       .project-left { border-right: none; border-bottom: 1px solid var(--border); }
       footer { flex-direction: column; gap: 12px; text-align: center; padding: 24px; }
     }
+
+    .top-btn {
+  position: fixed;
+  bottom: 36px;
+  right: 36px;
+  width: 44px;
+  height: 44px;
+  background: var(--card);
+  border: 1px solid var(--border2);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  opacity: 0;
+  pointer-events: none;
+  transition: all 0.3s;
+  z-index: 99;
+  font-size: 16px;
+  color: var(--text-dim);
+  text-decoration: none;
+}
+.top-btn.visible {
+  opacity: 1;
+  pointer-events: auto;
+}
+.top-btn:hover {
+  background: var(--accent);
+  border-color: var(--accent);
+  color: #fff;
+  box-shadow: 0 0 20px var(--accent-glow);
+}
   </style>
 </head>
 <body>
@@ -988,7 +1020,8 @@
     </div>
   </div>
 </section>
-
+<a href="#hero" class="top-btn" id="topBtn">↑</a>
+  
 <!-- FOOTER -->
 <footer>
   <div class="footer-left">© 2026 황영진. All rights reserved.</div>
