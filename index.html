@@ -662,7 +662,8 @@
     <h1 class="hero-name">황<span>영진</span></h1>
     <p class="hero-title">Frontend & Backend Developer</p>
     <p class="hero-desc">
-      정보통신공학과를 졸업한 후 React와 Node.js 기반의 웹 개발자로 성장하고 있습니다.<br>
+      정보통신공학과를 졸업한 후<br>
+      React와 Node.js 기반의 웹 개발자로 성장하고 있습니다.<br>
       기획부터 배포까지 직접 경험하며 꾸준히 성장하고 있습니다.
     </p>
     <div class="hero-links">
@@ -713,7 +714,7 @@
       </div>
       <div class="info-item">
         <span class="info-label">자격증</span>
-        <span class="info-value">자동차 운전면허 1종 보통<br>정보처리기사 (취득 예)</span>
+        <span class="info-value">자동차 운전면허 1종 보통<br>정보처리기사 (취득 예정)</span>
       </div>
       <div class="info-item">
         <span class="info-label">위치</span>
@@ -995,6 +996,16 @@
 </footer>
 
 <script>
+  // 맨위로 버튼
+  const topBtn = document.getElementById('topBtn');
+  window.addEventListener('scroll', () => {
+    if (window.scrollY > 400) {
+      topBtn.classList.add('visible');
+    } else {
+      topBtn.classList.remove('visible');
+    }
+  });
+ 
   // Fade in on scroll
   const observer = new IntersectionObserver((entries) => {
     entries.forEach((entry, i) => {
@@ -1006,13 +1017,13 @@
       }
     });
   }, { threshold: 0.1 });
-
+ 
   document.querySelectorAll('.fade-in').forEach(el => observer.observe(el));
-
+ 
   // Nav active
   const sections = document.querySelectorAll('section[id]');
   const navLinks = document.querySelectorAll('.nav-links a');
-
+ 
   window.addEventListener('scroll', () => {
     let current = '';
     sections.forEach(section => {
