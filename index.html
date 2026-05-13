@@ -181,10 +181,10 @@
       padding: 12px 28px;
       background: var(--accent);
       color: #fff;
-      font-family: var(--mono);
-      font-size: 13px;
-      font-weight: 600;
-      letter-spacing: 0.05em;
+      font-family: var(--sans);
+      font-size: 14px;
+      font-weight: 500;
+      letter-spacing: 0.02em;
       border-radius: 4px;
       text-decoration: none;
       transition: all 0.2s;
@@ -204,9 +204,10 @@
       padding: 12px 28px;
       background: transparent;
       color: var(--text);
-      font-family: var(--mono);
-      font-size: 13px;
-      letter-spacing: 0.05em;
+      font-family: var(--sans);
+      font-size: 14px;
+      font-weight: 400;
+      letter-spacing: 0.02em;
       border-radius: 4px;
       text-decoration: none;
       border: 1px solid var(--border2);
@@ -643,7 +644,7 @@
 
 <!-- NAV -->
 <nav>
-  <div class="nav-logo">YJ.dev</div>
+  <div class="nav-logo">@youngjin</div>
   <ul class="nav-links">
     <li><a href="#about">About</a></li>
     <li><a href="#skills">Skills</a></li>
@@ -661,8 +662,8 @@
     <h1 class="hero-name">황<span>영진</span></h1>
     <p class="hero-title">Frontend & Backend Developer</p>
     <p class="hero-desc">
-      정보통신공학과를 졸업하고 웹 풀스택 개발을 공부했습니다.<br>
-      React와 Node.js를 중심으로 사용자 경험을 고민하며 개발합니다.
+      정보통신공학과를 졸업한 후 React와 Node.js 기반의 웹 개발자로 성장하고 있습니다.<br>
+      기획부터 배포까지 직접 경험하며 꾸준히 성장하고 있습니다.
     </p>
     <div class="hero-links">
       <a href="#projects" class="btn-primary">프로젝트 보기 →</a>
@@ -683,8 +684,8 @@
   <div class="about-grid fade-in">
     <div class="about-text">
       <p>
-        <strong style="color: var(--text-bright)">정보통신공학과</strong>를 졸업하고 
-        웹 풀스택 국비 교육을 수료하며 개발 역량을 쌓았습니다.
+        <strong style="color: var(--text-bright)">정보통신공학과</strong>를 졸업하고
+        국비 교육을 수료하며 개발 역량을 쌓았습니다.
         Java, React, Node.js 기반 프로젝트들을 팀원들과 함께 완성하며
         협업과 문제 해결 능력을 키워왔습니다.
       </p>
@@ -703,12 +704,16 @@
         <span class="info-value">배재대학교 정보통신공학과 졸업 (2024)</span>
       </div>
       <div class="info-item">
-        <span class="info-label">교육</span>
-        <span class="info-value">웹 풀스택 국비 교육 수료 (2024)<br>임베디드 국비 교육 수료 (2025)</span>
+        <span class="info-label">현장실습</span>
+        <span class="info-value">RSteam (2023.01.09 ~ 2023.02.07)<br>웹 관련 직무 간접 학습 및 게시판 제작 실습</span>
       </div>
       <div class="info-item">
-        <span class="info-label">현장실습</span>
-        <span class="info-value">RSteam (2023.01 ~ 2023.02)</span>
+        <span class="info-label">교육</span>
+        <span class="info-value">스마트디바이스 연동 및 융합 SW 개발과정 수료<br>2024.03.04 ~ 2024.08.05<br><br>인공지능을 활용한 지능형 서비스 개발 심화과정 수료<br>2025.02.03 ~ 2025.03.26</span>
+      </div>
+      <div class="info-item">
+        <span class="info-label">자격증</span>
+        <span class="info-value">자동차 운전면허 1종 보통<br>정보처리기사 (취득 예)</span>
       </div>
       <div class="info-item">
         <span class="info-label">위치</span>
@@ -734,9 +739,9 @@
       <div class="skill-desc">Express.js Framework, REST API 설계, Middleware 구성</div>
     </div>
     <div class="skill-card fade-in">
-      <div class="skill-icon">// Backend</div>
-      <div class="skill-name">Java / Spring</div>
-      <div class="skill-desc">객체지향 프로그래밍, Spring Boot Framework 활용</div>
+      <div class="skill-icon">// Language</div>
+      <div class="skill-name">Java</div>
+      <div class="skill-desc">객체지향 프로그래밍, Swing GUI 개발</div>
     </div>
     <div class="skill-card fade-in">
       <div class="skill-icon">// Database</div>
@@ -745,13 +750,23 @@
     </div>
     <div class="skill-card fade-in">
       <div class="skill-icon">// Language</div>
-      <div class="skill-name">C / C++ / C#</div>
-      <div class="skill-desc">포인터·메모리 관리, STL, WinForms GUI 개발</div>
+      <div class="skill-name">C / C++</div>
+      <div class="skill-desc">포인터·메모리 관리, 동적 할당, STL 활용</div>
+    </div>
+    <div class="skill-card fade-in">
+      <div class="skill-icon">// Language</div>
+      <div class="skill-name">C# / Python</div>
+      <div class="skill-desc">WinForms GUI 개발, OpenCV 이미지 처리 및 객체 인식</div>
     </div>
     <div class="skill-card fade-in">
       <div class="skill-icon">// Tools</div>
       <div class="skill-name">Git / AWS</div>
       <div class="skill-desc">버전 관리, EC2 배포, Vercel / Render 활용</div>
+    </div>
+    <div class="skill-card fade-in">
+      <div class="skill-icon">// Design</div>
+      <div class="skill-name">Figma</div>
+      <div class="skill-desc">UI 직접 디자인 후 구현, 와이어프레임 및 프로토타입 제작</div>
     </div>
   </div>
 </section>
@@ -831,6 +846,7 @@
           </ul>
         </div>
         <div class="project-links">
+          <a href="https://github.com/youthFestival" target="_blank" class="project-link">GitHub ↗</a>
           <a href="https://youtu.be/1FX66uoD0hU" target="_blank" class="project-link">시연 영상 ↗</a>
         </div>
       </div>
@@ -866,7 +882,40 @@
           </ul>
         </div>
         <div class="project-links">
+          <a href="https://github.com/bakuuuuuuu/PlaModel-Factory" target="_blank" class="project-link">GitHub ↗</a>
           <a href="https://youtu.be/E_KFmdy8OSw" target="_blank" class="project-link">시연 영상 ↗</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- 재고관리 -->
+    <div class="project-card fade-in">
+      <div class="project-left">
+        <div>
+          <div class="project-num">04 / 팀 프로젝트 (5인)</div>
+          <div class="project-name">키오스크<br>재고관리</div>
+          <div class="project-period">2024.04</div>
+        </div>
+        <div class="project-tags">
+          <span class="tag">Java</span>
+          <span class="tag">Swing GUI</span>
+        </div>
+      </div>
+      <div class="project-right">
+        <p class="project-summary">
+          Java와 Swing GUI를 활용한 키오스크 프로그램입니다.
+          사용자 메뉴(상품 확인, 장바구니, 결제)와 관리자 메뉴(재고 관리, 발주, 유통기한 확인)를 제공합니다.
+        </p>
+        <div class="project-role">
+          <div class="role-label">담당 역할</div>
+          <ul class="role-list">
+            <li>영수증 클래스 구현 (타임스탬프, 포인트 자동 계산)</li>
+            <li>결제 기능 구현 (카드/포인트 처리, 재고 업데이트)</li>
+          </ul>
+        </div>
+        <div class="project-links">
+          <a href="https://github.com/bakuuuuuuu/Kiosk" target="_blank" class="project-link">GitHub ↗</a>
+          <a href="https://youtu.be/_tZk4IIifsU" target="_blank" class="project-link">시연 영상 ↗</a>
         </div>
       </div>
     </div>
@@ -875,7 +924,7 @@
     <div class="project-card fade-in">
       <div class="project-left">
         <div>
-          <div class="project-num">04 / 팀 프로젝트 (5인, 팀장)</div>
+          <div class="project-num">05 / 팀 프로젝트 (5인, 팀장)</div>
           <div class="project-name">레시피<br>공유 사이트</div>
           <div class="project-period">2024.04 ~ 2024.05</div>
         </div>
@@ -904,37 +953,6 @@
       </div>
     </div>
 
-    <!-- 재고관리 -->
-    <div class="project-card fade-in">
-      <div class="project-left">
-        <div>
-          <div class="project-num">05 / 팀 프로젝트 (5인)</div>
-          <div class="project-name">키오스크<br>재고관리</div>
-          <div class="project-period">2024.04</div>
-        </div>
-        <div class="project-tags">
-          <span class="tag">Java</span>
-          <span class="tag">Swing GUI</span>
-        </div>
-      </div>
-      <div class="project-right">
-        <p class="project-summary">
-          Java와 Swing GUI를 활용한 키오스크 프로그램입니다.
-          사용자 메뉴(상품 확인, 장바구니, 결제)와 관리자 메뉴(재고 관리, 발주, 유통기한 확인)를 제공합니다.
-        </p>
-        <div class="project-role">
-          <div class="role-label">담당 역할</div>
-          <ul class="role-list">
-            <li>영수증 클래스 구현 (타임스탬프, 포인트 자동 계산)</li>
-            <li>결제 기능 구현 (카드/포인트 처리, 재고 업데이트)</li>
-          </ul>
-        </div>
-        <div class="project-links">
-          <a href="https://youtu.be/_tZk4IIifsU" target="_blank" class="project-link">시연 영상 ↗</a>
-        </div>
-      </div>
-    </div>
-
   </div>
 </section>
 
@@ -944,7 +962,7 @@
   <div class="contact-card fade-in">
     <h2 class="contact-title">연락하기</h2>
     <p class="contact-desc">새로운 기회나 협업에 열려있습니다. 편하게 연락주세요.</p>
-    <div class="contact-items">
+    <div class="contact-items" style="display:inline-flex; flex-direction:column; align-items:flex-start; gap:16px; margin-bottom:40px;">
       <div class="contact-item">
         <div class="contact-dot"></div>
         <a href="mailto:j5672974@gmail.com">j5672974@gmail.com</a>
@@ -970,7 +988,7 @@
 
 <!-- FOOTER -->
 <footer>
-  <div class="footer-left">© 2025 황영진. All rights reserved.</div>
+  <div class="footer-left">© 2026 황영진. All rights reserved.</div>
   <div class="footer-right">Built with HTML / CSS / JS</div>
 </footer>
 
